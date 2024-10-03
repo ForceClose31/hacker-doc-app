@@ -3,4 +3,6 @@
     <string name="about_image">About</string>
     <string name="hacker_image">hacker image</string>
     <string name="splash_image">splash image</string>
+    <string name="detail_image">detail image</string>
+    <string name="about">About</string>
 </resources>

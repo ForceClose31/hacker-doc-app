@@ -1,8 +1,8 @@
-package com.example.hackerlist
+package com.example.task_beginner_dicoding
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.hackerlist.databinding.ActivityAboutBinding
+import com.example.task_beginner_dicoding.databinding.ActivityAboutBinding
 
 class AboutActivity : AppCompatActivity() {
 
@@ -15,9 +15,9 @@ class AboutActivity : AppCompatActivity() {
 
         // Set your details
         binding.apply {
-            aboutName.text = "Your Name"
-            aboutEmail.text = "your_email@dicoding.com"
-            aboutImage.setImageResource(R.drawable.your_profile_image)
+            aboutName.text = "basori"
+            aboutEmail.text = "bas@gmail.com"
+            aboutImage.setImageResource(R.drawable.anonymous)
         }
     }
 }

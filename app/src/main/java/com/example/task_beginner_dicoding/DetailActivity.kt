@@ -1,9 +1,10 @@
-package com.example.hackerlist
+package com.example.task_beginner_dicoding
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.hackerlist.databinding.ActivityDetailBinding
-import com.example.hackerlist.models.Hacker
+import com.example.task_beginner_dicoding.models.Hacker
+import com.example.task_beginner_dicoding.databinding.ActivityDetailBinding
 
 class DetailActivity : AppCompatActivity() {
 

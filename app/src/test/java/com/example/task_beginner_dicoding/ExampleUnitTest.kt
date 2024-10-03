@@ -1,4 +1,4 @@
-package com.example.hackerlist
+package com.example.task_beginner_dicoding
 
 import org.junit.Test
 

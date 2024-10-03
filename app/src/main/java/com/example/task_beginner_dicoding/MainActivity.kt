@@ -1,4 +1,4 @@
-package com.example.hackerlist
+package com.example.task_beginner_dicoding
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,9 +6,8 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.hackerlist.adapters.HackerAdapter
-import com.example.hackerlist.models.Hacker
-import com.example.hackerlist.R
+import com.example.task_beginner_dicoding.adapters.HackerAdapter
+import com.example.task_beginner_dicoding.models.Hacker
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,7 +22,6 @@ class MainActivity : AppCompatActivity() {
         hackerRecyclerView = findViewById(R.id.hackerRecyclerView)
         hackerList = ArrayList()
 
-        // Populate the list with hacker data
         hackerList.add(Hacker("Kevin Mitnick", "Famous for hacking into 40 major corporations", R.drawable.kevin_mitnick))
         hackerList.add(Hacker("Anonymous", "A group known for its hacktivism", R.drawable.anonymous))
         hackerList.add(Hacker("Adrian Lamo", "Best known for hacking into major organizations", R.drawable.adrian_lamo))
@@ -45,7 +43,6 @@ class MainActivity : AppCompatActivity() {
         hackerRecyclerView.layoutManager = LinearLayoutManager(this)
         hackerRecyclerView.adapter = hackerAdapter
 
-        // About button
         findViewById<Button>(R.id.aboutButton).setOnClickListener {
             val intent = Intent(this, AboutActivity::class.java)
             startActivity(intent)
