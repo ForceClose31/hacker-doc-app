@@ -3,6 +3,7 @@ package com.example.task_beginner_dicoding
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -43,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         hackerRecyclerView.layoutManager = LinearLayoutManager(this)
         hackerRecyclerView.adapter = hackerAdapter
 
-        findViewById<Button>(R.id.aboutButton).setOnClickListener {
+        findViewById<ImageView>(R.id.aboutIcon).setOnClickListener {
             val intent = Intent(this, AboutActivity::class.java)
             startActivity(intent)
         }

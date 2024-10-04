@@ -17,14 +17,12 @@ class DetailActivity : AppCompatActivity() {
 
         val hacker = intent.getParcelableExtra<Hacker>("hacker")
 
-        // Set data to views
         hacker?.let {
             binding.detailImage.setImageResource(it.imageResId)
             binding.detailTitle.text = it.name
             binding.detailDescription.text = it.description
         }
 
-        // Implement Share functionality
         binding.actionShare.setOnClickListener {
             val shareIntent = Intent().apply {
                 action = Intent.ACTION_SEND

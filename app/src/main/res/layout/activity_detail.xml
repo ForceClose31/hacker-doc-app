@@ -6,13 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".DetailActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/aboutIcon"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:contentDescription="@string/back"
+            android:padding="16dp"
+            android:src="@mipmap/ic_back" />
+
+    </androidx.appcompat.widget.Toolbar>
+
     <ImageView
         android:id="@+id/detailImage"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:scaleType="centerCrop"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/detail_image" />
+        android:contentDescription="@string/detail_image"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/topToolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
 
     <TextView
         android:id="@+id/detailTitle"
