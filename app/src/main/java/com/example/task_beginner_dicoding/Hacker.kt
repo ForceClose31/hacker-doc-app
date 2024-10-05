@@ -7,5 +7,8 @@ import kotlinx.parcelize.Parcelize
 data class Hacker(
     val name: String,
     val description: String,
-    val imageResId: Int
+    val mainImage: Int,
+    val achievements: String,
+    val biography: String,
+    val additionalImages: List<Int>
 ) : Parcelable

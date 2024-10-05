@@ -37,7 +37,7 @@ class HackerAdapter(
         val hacker = hackerList[position]
         holder.hackerName.text = hacker.name
         holder.hackerDescription.text = hacker.description
-        holder.hackerImage.setImageResource(hacker.imageResId)
+        holder.hackerImage.setImageResource(hacker.mainImage)
     }
 
     override fun getItemCount(): Int {

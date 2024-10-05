@@ -15,6 +15,18 @@ class AboutActivity : AppCompatActivity() {
         binding = ActivityAboutBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setSupportActionBar(binding.topToolbar)
+        supportActionBar?.apply {
+            setDisplayHomeAsUpEnabled(true)
+            setDisplayShowHomeEnabled(true)
+            title = "Home"
+        }
+
+
+        binding.topToolbar.setNavigationOnClickListener{
+            onBackPressed()
+        }
+
         binding.apply {
             aboutName.text = "Nur Bashori Rahmat Oktavianto Herman"
             aboutEmail.text = "a227b4ky3415@bangkit.academy"
