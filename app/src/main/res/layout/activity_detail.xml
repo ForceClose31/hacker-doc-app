@@ -55,7 +55,7 @@
                 android:layout_marginTop="8dp"
                 android:textSize="16sp"
                 android:textColor="@color/black"
-                android:layout_gravity="center_horizontal"/>
+                android:justificationMode="inter_word"/>
 
             <TextView
                 android:id="@+id/achievementsTitle"
@@ -74,8 +74,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:textSize="16sp"
-                android:textColor="@color/black"
-                android:layout_gravity="center_horizontal"/>
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/biographyTitle"
@@ -95,7 +95,7 @@
                 android:layout_marginTop="8dp"
                 android:textSize="16sp"
                 android:textColor="@color/black"
-                android:layout_gravity="center_horizontal"/>
+                android:justificationMode="inter_word"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/additionalImagesRecyclerView"
